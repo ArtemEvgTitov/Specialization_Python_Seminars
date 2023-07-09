@@ -4,3 +4,4 @@ while rows > 0:
     print(" " * rows, "*" * symbol)
     rows -= 1
     symbol += 2
+
