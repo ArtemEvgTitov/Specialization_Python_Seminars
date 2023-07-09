@@ -8,6 +8,8 @@ from datetime import datetime as dt
 from calendar import isleap
 
 
+__all__ = ['check_year', 'check_date']
+
 def check_year(current_date):
     try:
         day, month, year = map(int, current_date.split('.'))
@@ -27,4 +29,5 @@ def check_date(current_date):
         return False
     return True
 
-print(check_year('11.12.2000'))
+if __name__ == '__main__':
+    print(check_year('11.12.2000'))
